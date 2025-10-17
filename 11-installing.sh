@@ -19,3 +19,13 @@ if [ $? -ne 0 ];then
    echo "installing my sql server is success"
    exit 0
  fi   
+
+ dnf install ngnix
+
+
+ if [ $? -ne 0 ];then
+   echo "error"
+   exit 1
+else
+  echo "install"
+  fi   
