@@ -2,4 +2,4 @@
 
 #DATE=$(date)
 
-echo "time : $DATE"
+echo "time : $(DATE)"
