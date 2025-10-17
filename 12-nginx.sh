@@ -18,3 +18,11 @@ fi
 else
   echo "install"
   fi   
+dnf install mysql -y
+
+ if [ $? -ne 0 ];then
+   echo "error"
+   exit 1
+else
+  echo "install"
+  fi   
