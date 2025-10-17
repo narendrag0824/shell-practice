@@ -20,7 +20,7 @@ if [ $? -ne 0 ];then
    exit 0
  fi   
 
- dnf install nginx
+ dnf install nginx -y
 
 
  if [ $? -ne 0 ];then
