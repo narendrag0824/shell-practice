@@ -22,7 +22,6 @@ if [ $? -ne 0 ];then
 
  dnf install nginx -y
 
-
  if [ $? -ne 0 ];then
    echo "error"
    exit 1
