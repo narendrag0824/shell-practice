@@ -26,3 +26,11 @@ dnf install mysql -y
 else
   echo "install"
   fi   
+dnf install python3 -y
+
+ if [ $? -ne 0 ];then
+   echo "error"
+   exit 1
+else
+  echo "install"
+  fi   
