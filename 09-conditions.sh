@@ -2,7 +2,7 @@
 
 number=$1
  if [ $number -lt 10 ]; then 
-    echo" the given $number is less than 10"
+    echo" the given number $number is less than 10"
  else
-    echo" given $number is greater than or eqal to 10"
+    echo" given number $number is greater than or eqal to 10"
  fi       
