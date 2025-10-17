@@ -11,7 +11,7 @@ fi
 
 dnf install mysql -y
 
-if [$? -ne 0 ];then
+if [ $? -ne 0 ];then
   echo "error::installing is failed"
   exit 1
   
