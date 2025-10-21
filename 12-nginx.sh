@@ -34,3 +34,4 @@ dnf install python3 -y
 else
   echo "install"
   fi   
+variables
