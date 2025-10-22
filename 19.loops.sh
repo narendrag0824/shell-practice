@@ -24,11 +24,9 @@ validate(){
       echo -e "installing $2 ... $r is failed $n"
       exit 1
   else
-      echo -e "installing $2 ... $g is sucess $n"
+      echo -e "installing $2 ... $g is success $n"
   fi      
 }
-
-$@ #all packages
 
 for package in $@
 do
