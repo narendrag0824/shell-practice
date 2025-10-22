@@ -12,7 +12,7 @@ scriptname=$( echo $0 | cut -d "." -f1 )
 logfile="$logfolder/$scriptname.log"
 
 mkdir -p $logfolder
-echo "script started excuted: $(date)"
+echo "script started excuted: $(date)" | tee -a $logfolder
 
 if [ $userid -ne 0 ]; then
     echo -e "error::please run as sudo user"
