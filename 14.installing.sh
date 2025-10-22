@@ -25,11 +25,11 @@ dnf install mysql -y
      echo "installing nginx is success"
  fi    
 
- dnf install phyton3 -y
+ dnf install python3 -y
 
  if [ $? -ne 0 ];then
-    echo "error::installing phyton3 is failure"
+    echo "error::installing python3 is failure"
     exit 1
  else 
-     echo "installing phyton3 is success"
+     echo "installing python3 is success"
 fi 
