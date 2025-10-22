@@ -11,7 +11,7 @@ logfolder="/vim/log/shell-script"
 scriptname=$( echo $0 | cut -d "." -f1 )
 logfile="$logfolder/$scrpitname.log"
 
-mkdir -p $logsfolder
+mkdir -p$logsfolder
 echo "script started excuted: $(date)"
 
 if [ $userid -ne 0 ]; then
