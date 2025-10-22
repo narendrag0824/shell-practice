@@ -32,5 +32,11 @@ $@ #all packages
 
 for package in $@
 do
- echo "package is $@"
+ dnf list installed $package &>>$logfile
+if [ $? -ne 0 ];then
+  dnf install $package -y &>>$logfile
+  validate $? "$package"
+else
+  echo -e "$package already installed...$y skippig $n"
+fi  
 done
