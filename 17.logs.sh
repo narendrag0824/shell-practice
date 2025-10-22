@@ -7,7 +7,7 @@ g="\e[32m"
 y="\e[33m"
 n="\e[0m"
 
-logfolder="/vim/log/shell-script"
+logfolder="/var/log/shell-script"
 scriptname=$( echo $0 | cut -d "." -f1 )
 logfile="$logfolder/$scrpitname.log"
 
