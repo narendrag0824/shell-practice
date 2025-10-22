@@ -9,7 +9,7 @@ n="\e[0m"
 
 logfolder="/var/log/shell-script"
 scriptname=$( echo $0 | cut -d "." -f1 )
-logfile="$logfolder/$scrpitname.log"
+logfile="$logfolder/$scriptname.log"
 
 mkdir -p $logfolder
 echo "script started excuted: $(date)"
